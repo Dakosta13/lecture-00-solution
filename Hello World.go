@@ -1,9 +1,14 @@
 package main
 
-import "github.com/kyokomi/emoji/v2"
+import (
+	"fmt"
+
+	"github.com/kyokomi/emoji/v2"
+)
 
 func main() {
 
-	emoji.Println("Hello :world_map:!")
+	wm := emoji.Sprint(":world_map:!")
+	fmt.Println("Hello", wm)
 
 }
